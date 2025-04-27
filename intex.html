@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Zodiac Insight – Раскрой тайны своего знака</title>
+  <!-- Если у вас нет внешнего файла стилей, можно использовать встроенные стили -->
+  <style>
+    /* Базовые стили для демонстрации */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background-color: #f7f7f7;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    header .logo {
+      height: 40px;
+      margin-right: 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    main {
+      margin-top: 60px; /* чтобы контент не заходил под шапку */
+    }
+    section {
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    /* Стили для разных разделов */
+    #first {
+      background: url('images/zodiac_bg.jpg') no-repeat center center/cover;
+      color: #fff;
+    }
+    #about {
+      background-color: #fffbea;
+    }
+    #horoscope {
+      background-color: #f0f8ff;
+    }
+    #contact {
+      background-color: #e0e0e0;
+    }
+    .content {
+      max-width: 800px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: darkblue;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px 12px;
+    }
+    footer {
+      background-color: #f7f7f7;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка сайта с логотипом и меню -->
+  <header>
+    <!-- Логотип: убедитесь, что файл zodiac_logo.png находится в папке images -->
+    <img src="images/zodiac_logo.png" alt="Zodiac Insight Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#first">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#horoscope">Гороскоп</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Раздел Главная -->
+    <section id="first">
+      <div class="content">
+        <h1>Zodiac Insight</h1>
+        <h2>Раскрой свою судьбу через звёзды!</h2>
+        <p>
+          Добро пожаловать! Здесь звёзды расскажут многое о твоём характере, потенциале и жизненном пути. Узнай, какой знак Зодиака тебе соответствует и как он влияет на твою судьбу.
+        </p>
+        <a href="#contact" class="button">Узнай свой знак</a>
+      </div>
+    </section>
+
+    <!-- Раздел О нас -->
+    <section id="about">
+      <div class="content">
+        <h2>О нас</h2>
+        <p>
+          Zodiac Insight – это платформа, где астрология становится доступной каждому. Мы предлагаем подробные описания знаков Зодиака, ежедневные гороскопы и рекомендации по гармонизации жизни.
+        </p>
+        <p>
+          Наша миссия – помочь вам лучше понять себя, раскрыть свои таланты и сделать выбор в пользу счастливого будущего.
+        </p>
+      </div>
+    </section>
+
+    <!-- Раздел Гороскоп -->
+    <section id="horoscope">
+      <div class="content">
+        <h2>Гороскоп</h2>
+        <p>Ежедневные прогнозы для каждого знака Зодиака:</p>
+        <ul>
+          <li>Овен</li>
+          <li>Телец</li>
+          <li>Близнецы</li>
+          <li>Рак</li>
+          <li>Лев</li>
+          <li>Дева</li>
+          <li>Весы</li>
+          <li>Скорпион</li>
+          <li>Стрелец</li>
+          <li>Козерог</li>
+          <li>Водолей</li>
+          <li>Рыбы</li>
+        </ul>
+        <h3>Краткая характеристика знаков</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Знак</th>
+            <th>Ключевые черты</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Овен</td>
+            <td>Энергичный, решительный, пылкий</td>
+          </tr>
+          <tr>
+            <td>Телец</td>
+            <td>Надёжный, практичный, упорный</td>
+          </tr>
+          <tr>
+            <td>Близнецы</td>
+            <td>Коммуникабельные, изменчивые, любознательные</td>
+          </tr>
+          <tr>
+            <td>Рак</td>
+            <td>Чувствительный, заботливый, интуитивный</td>
+          </tr>
+          <tr>
+            <td>Лев</td>
+            <td>Лидерский, творческий, щедрый</td>
+          </tr>
+          <tr>
+            <td>Дева</td>
+            <td>Аналитичная, аккуратная, критичная</td>
+          </tr>
+          <tr>
+            <td>Весы</td>
+            <td>Дипломатичные, гармоничные, общительные</td>
+          </tr>
+          <tr>
+            <td>Скорпион</td>
+            <td>Интенсивный, страстный, мистический</td>
+          </tr>
+          <tr>
+            <td>Стрелец</td>
+            <td>Оптимистичный, авантюрный, независимый</td>
+          </tr>
+          <tr>
+            <td>Козерог</td>
+            <td>Дисциплинированный, амбициозный, ответственный</td>
+          </tr>
+          <tr>
+            <td>Водолей</td>
+            <td>Инновационный, оригинальный, гуманистичный</td>
+          </tr>
+          <tr>
+            <td>Рыбы</td>
+            <td>Мечтательные, чувствительные, эмпатичные</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+    <!-- Раздел Контакты -->
+    <section id="contact">
+      <div class="content">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 (800) 555-12-34</p>
+        <p>Email: zodiac@insight.ru</p>
+        <p>Адрес: г. Санкт-Петербург, ул. Астрономическая, д. 15</p>
+        <h3>Мы в соцсетях</h3>
+        <ul class="social">
+          <li><a href="https://vk.com" target="_blank">ВКонтакте</a></li>
+          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер сайта -->
+  <footer>
+    <p>&copy; 2023 Zodiac Insight. Все права защищены.</p>
+  </footer>
+</body>
+</html>
